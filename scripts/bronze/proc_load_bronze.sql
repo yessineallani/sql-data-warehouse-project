@@ -45,3 +45,22 @@ INSERT INTO bronze.DimCategory (category_id, category_name) VALUES
 (42, 'Shorts'),
 (43, 'Shows'),
 (44, 'Trailers');
+
+
+DECLARE @startDate DATE = '2015-01-01';
+DECLARE @endDate DATE = '2025-12-31';
+
+WHILE (@startDate <= @endDate)
+BEGIN
+    INSERT INTO bronze.DimDate (date_id, date, day, month, year, weekday)
+    VALUES (
+        CONVERT(INT, FORMAT(@startDate, 'yyyyMMdd')),
+        @startDate,
+        DAY(@startDate),
+        MONTH(@startDate),
+        YEAR(@startDate),
+        DATENAME(WEEKDAY, @startDate)
+    );
+
+    SET @startDate = DATEADD(DAY, 1, @startDate);
+END;
