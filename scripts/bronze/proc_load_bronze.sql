@@ -64,3 +64,39 @@ BEGIN
 
     SET @startDate = DATEADD(DAY, 1, @startDate);
 END;
+
+
+CREATE TABLE bronze.YouTubeRaw (
+    video_id VARCHAR(20),
+    trending_date DATE,
+    title NVARCHAR(500),
+    channel_title NVARCHAR(255),
+    category_id INT,
+    publish_time DATETIME,
+    tags NVARCHAR(MAX),
+    views BIGINT,
+    likes BIGINT,
+    dislikes BIGINT,
+    comment_count BIGINT,
+    thumbnail_link NVARCHAR(MAX),
+    comments_disabled BIT,
+    ratings_disabled BIT,
+    video_error_or_removed BIT,
+    description NVARCHAR(MAX)
+);
+
+BULK INSERT bronze.YouTubeRaw
+FROM 'C:\Data\USvideos.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0A',
+    CODEPAGE = '65001'
+);
+
+
+ALTER TABLE bronze.YouTubeRaw ADD country_code CHAR(2);
+
+UPDATE bronze.YouTubeRaw
+SET country_code = 'US';
