@@ -1,3 +1,218 @@
+IF OBJECT_ID('bronze.DE_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.DE_videos;
+GO
+
+CREATE TABLE bronze.DE_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+GO
+
+IF OBJECT_ID('bronze.GB_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.GB_videos;
+GO
+
+CREATE TABLE bronze.GB_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+GO
+
+IF OBJECT_ID('bronze.IN_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.IN_videos;
+GO
+
+CREATE TABLE bronze.IN_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+GO
+
+IF OBJECT_ID('bronze.JP_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.JP_videos;
+GO
+
+CREATE TABLE bronze.JP_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+GO
+
+IF OBJECT_ID('bronze.KR_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.KR_videos;
+GO
+
+CREATE TABLE bronze.KR_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+GO
+
+IF OBJECT_ID('bronze.MX_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.MX_videos;
+GO
+
+CREATE TABLE bronze.MX_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+GO
+
+IF OBJECT_ID('bronze.RU_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.RU_videos;
+GO
+
+CREATE TABLE bronze.RU_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+
+IF OBJECT_ID('bronze.US_videos', 'U') IS NOT NULL
+    DROP TABLE bronze.US_videos;
+GO
+
+CREATE TABLE bronze.US_videos (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+
+IF OBJECT_ID('bronze.YouTube_CA', 'U') IS NOT NULL
+    DROP TABLE bronze.YouTube_CA;
+GO
+
+CREATE TABLE bronze.YouTube_CA (
+    video_id VARCHAR(100),
+    trending_date VARCHAR(50),
+    title NVARCHAR(MAX),
+    channel_title NVARCHAR(500),
+    category_id VARCHAR(50), 
+    publish_time VARCHAR(50),
+    tags NVARCHAR(MAX),
+    views VARCHAR(50),
+    likes VARCHAR(50),
+    dislikes VARCHAR(50),
+    comment_count VARCHAR(50),
+    thumbnail_link NVARCHAR(500),
+    comments_disabled VARCHAR(50),  
+    ratings_disabled VARCHAR(50),
+    video_error_or_removed VARCHAR(50),
+    description NVARCHAR(MAX)
+);
+
+
+-------------------------------------------------
 
 IF OBJECT_ID('bronze.DimCountry', 'U') IS NOT NULL
     DROP TABLE bronze.DimCountry;
